@@ -1,4 +1,5 @@
-import { cvNotes, jobs, profile, projects, stack } from "@/data/profile";
+import { lebenslauf } from "@/data/lebenslauf";
+import { jobs, profile, projects, stack } from "@/data/profile";
 
 // Platzhalter wie "[Projektname App]" nicht an das Modell geben
 const isPlaceholder = (s: string) => s.trim().startsWith("[");
@@ -20,7 +21,7 @@ export function buildCvSystemPrompt() {
     ...projects
       .filter((p) => !isPlaceholder(p.title))
       .map((p) => `- ${p.title} (${p.kind}): ${p.text} Stack: ${p.stack}`),
-    ...(cvNotes ? ["", "## Weitere Informationen", cvNotes] : []),
+    ...(lebenslauf ? ["", "## Vollständiger Lebenslauf", lebenslauf] : []),
   ].join("\n");
 
   return `Du bist der Assistent auf der Portfolio-Website von ${profile.name}. Besucher – meist Recruiter und potenzielle Auftraggeber – stellen dir Fragen zu seinem beruflichen Profil.
