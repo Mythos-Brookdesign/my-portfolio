@@ -11,6 +11,13 @@ export const profile = {
   cvUrl: "#", // TODO: PDF in /public ablegen, z. B. "/lebenslauf.pdf"
 };
 
+// Zusätzliches Wissen nur für "Frag meinen Lebenslauf" (wird nicht auf der Seite angezeigt).
+// Je mehr hier steht, desto besser antwortet der Assistent.
+// TODO: Ausbildung/Studium, Zertifikate, Sprachkenntnisse, Branchen, Teamgrößen,
+// Projektdetails, Arbeitsweise, Verfügbarkeit.
+export const cvNotes = `
+`.trim();
+
 export const stack = [
   { title: "Frontend", items: ["React", "Next.js", "TypeScript", "JavaScript", "HTML5", "CSS3"] },
   { title: "Backend & Daten", items: ["Node.js", "PHP", "REST-APIs", "MySQL", "MongoDB"] },
