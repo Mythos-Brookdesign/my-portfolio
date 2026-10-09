@@ -36,12 +36,14 @@ export const projects: Project[] = [
     title: "Dieses Portfolio",
     text: "Next.js-Frontend mit WordPress als Headless-CMS, automatisiertes Deployment über GitHub Actions.",
     stack: "Next.js · TypeScript · WordPress · GitHub Actions",
+    image: "/projects/portfolio.png",
   },
   {
     kind: "KI",
     title: "Frag meinen Lebenslauf",
     text: "Chat-Assistent, der Fragen zu meinem Profil beantwortet – angebunden an die Claude API.",
     stack: "Next.js · Node.js · Claude API",
+    image: "/projects/ask-cv.png",
   },
   {
     kind: "Mobile App",

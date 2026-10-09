@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { jobs, posts, profile, projects, stack } from "@/data/profile";
 import { SectionHeading } from "./SectionHeading";
 
@@ -64,10 +65,21 @@ export function Projects() {
       <div className="grid grid-cols-[repeat(auto-fit,minmax(320px,1fr))] gap-6">
         {projects.map((p) => (
           <article key={p.title} className={`${card} flex flex-col overflow-hidden`}>
-            {/* TODO: Screenshot über next/image einbinden, wenn p.image gesetzt ist */}
-            <div className="flex h-[220px] items-center justify-center border-b border-line bg-surface-2 font-mono text-[13px] text-faint">
-              [Screenshot: {p.title}]
-            </div>
+            {p.image ? (
+              <div className="relative h-[220px] border-b border-line bg-surface-2">
+                <Image
+                  src={p.image}
+                  alt={`Screenshot: ${p.title}`}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 400px"
+                  className="object-cover object-top"
+                />
+              </div>
+            ) : (
+              <div className="flex h-[220px] items-center justify-center border-b border-line bg-surface-2 font-mono text-[13px] text-faint">
+                [Screenshot: {p.title}]
+              </div>
+            )}
             <div className="flex flex-1 flex-col gap-3 p-6">
               <p className="font-mono text-xs text-accent">{p.kind}</p>
               <h3 className="font-display text-[22px] font-bold">{p.title}</h3>
