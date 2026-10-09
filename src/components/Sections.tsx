@@ -65,7 +65,7 @@ export function Projects() {
         {projects.map((p) => (
           <article key={p.title} className={`${card} flex flex-col overflow-hidden`}>
             {/* TODO: Screenshot über next/image einbinden, wenn p.image gesetzt ist */}
-            <div className="flex h-[220px] items-center justify-center border-b border-line bg-surface-2 font-mono text-[13px] text-[#8a909b]">
+            <div className="flex h-[220px] items-center justify-center border-b border-line bg-surface-2 font-mono text-[13px] text-faint">
               [Screenshot: {p.title}]
             </div>
             <div className="flex flex-1 flex-col gap-3 p-6">
@@ -74,8 +74,8 @@ export function Projects() {
               <p className="text-base text-muted">{p.text}</p>
               <p className="font-mono text-[13px] text-subtle">{p.stack}</p>
               <div className="mt-auto flex gap-5 pt-2 text-[15px]">
-                <a href={p.liveUrl ?? "#"} className="hover:text-white">Live ansehen →</a>
-                <a href={p.githubUrl ?? "#"} className="hover:text-white">GitHub →</a>
+                <a href={p.liveUrl ?? "#"} className="hover:text-strong">Live ansehen →</a>
+                <a href={p.githubUrl ?? "#"} className="hover:text-strong">GitHub →</a>
               </div>
             </div>
           </article>
@@ -101,7 +101,7 @@ export function Experience() {
           </li>
         ))}
       </ol>
-      <a href={profile.cvUrl} className="mt-7 inline-block text-base hover:text-white">
+      <a href={profile.cvUrl} className="mt-7 inline-block text-base hover:text-strong">
         Vollständiger Lebenslauf als PDF →
       </a>
     </section>
@@ -140,9 +140,9 @@ export function Contact() {
             bundesweit. Verfügbar ab sofort.
           </p>
           <div className="flex flex-col gap-3 text-base">
-            <a href={`mailto:${profile.email}`} className="hover:text-white">{profile.email}</a>
-            <a href={profile.linkedin} className="hover:text-white">LinkedIn</a>
-            <a href={profile.github} className="hover:text-white">GitHub</a>
+            <a href={`mailto:${profile.email}`} className="hover:text-strong">{profile.email}</a>
+            <a href={profile.linkedin} className="hover:text-strong">LinkedIn</a>
+            <a href={profile.github} className="hover:text-strong">GitHub</a>
           </div>
         </div>
         {/* TODO: Formular an eine Server Action oder einen Mail-Dienst anbinden */}
@@ -161,7 +161,7 @@ export function Contact() {
           </label>
           <button
             type="submit"
-            className="min-h-12 cursor-pointer self-start rounded-[10px] bg-accent px-7 font-medium text-[#111214]"
+            className="min-h-12 cursor-pointer self-start rounded-[10px] bg-accent px-7 font-medium text-on-accent"
           >
             Nachricht senden
           </button>
@@ -173,12 +173,12 @@ export function Contact() {
 
 export function Footer() {
   return (
-    <footer className="border-t border-[#23262d]">
+    <footer className="border-t border-line-soft">
       <div className="mx-auto flex max-w-[1200px] flex-wrap justify-between gap-4 px-6 py-7 text-sm text-subtle">
         <span>© 2026 {profile.name}</span>
         <div className="flex gap-6">
-          <a href="/impressum" className="hover:text-white">Impressum</a>
-          <a href="/datenschutz" className="hover:text-white">Datenschutz</a>
+          <a href="/impressum" className="hover:text-strong">Impressum</a>
+          <a href="/datenschutz" className="hover:text-strong">Datenschutz</a>
         </div>
       </div>
     </footer>

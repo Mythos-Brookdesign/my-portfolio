@@ -49,7 +49,7 @@ export function AskCv() {
                   {m.text}
                 </div>
               ) : (
-                <div key={i} className="max-w-[85%] self-start rounded-[14px_14px_14px_4px] border border-[#2c303a] bg-surface-2 px-4 py-3 text-text-soft">
+                <div key={i} className="max-w-[85%] self-start rounded-[14px_14px_14px_4px] border border-line bg-surface-2 px-4 py-3 text-text-soft">
                   {m.text}
                 </div>
               ),
@@ -68,7 +68,7 @@ export function AskCv() {
             />
             <button
               type="submit"
-              className="min-h-12 cursor-pointer rounded-[10px] bg-accent px-[22px] font-medium text-[#111214]"
+              className="min-h-12 cursor-pointer rounded-[10px] bg-accent px-[22px] font-medium text-on-accent"
             >
               Fragen
             </button>

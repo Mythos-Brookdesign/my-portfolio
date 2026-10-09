@@ -1,19 +1,67 @@
 @import "tailwindcss";
 
-/* Design-Tokens – Akzentfarbe hier zentral ändern */
+/* Light-Mode-Variante: greift, sobald <html data-theme="light"> gesetzt ist */
+@custom-variant light (&:where([data-theme="light"], [data-theme="light"] *));
+
+/* Design-Tokens – Dark Mode (Standard) */
+:root {
+  color-scheme: dark;
+  --bg: #0f1115;
+  --surface: #161920;
+  --surface-2: #1c2028;
+  --chip: #1f232b;
+  --line-soft: #23262d;
+  --line: #262a33;
+  --line-strong: #3a3e48;
+  --text: #e8e6e1;
+  --text-soft: #c9ccd2;
+  --muted: #b4b8c0;
+  --subtle: #9ba1ac;
+  --faint: #8a909b;
+  --strong: #ffffff;
+  --accent: #f5a524;
+  --on-accent: #111214;
+  --code-string: #9fd7a8;
+}
+
+/* Design-Tokens – Light Mode */
+[data-theme="light"] {
+  color-scheme: light;
+  --bg: #f7f6f3;
+  --surface: #ffffff;
+  --surface-2: #f1f0ec;
+  --chip: #ecebe6;
+  --line-soft: #e4e2dc;
+  --line: #dedcd5;
+  --line-strong: #c4c1b8;
+  --text: #1a1c20;
+  --text-soft: #353941;
+  --muted: #474c55;
+  --subtle: #575d68;
+  --faint: #656b76;
+  --strong: #000000;
+  --accent: #b45309;
+  --on-accent: #ffffff;
+  --code-string: #1f7a3a;
+}
+
 @theme inline {
-  --color-bg: #0f1115;
-  --color-surface: #161920;
-  --color-surface-2: #1c2028;
-  --color-chip: #1f232b;
-  --color-line: #262a33;
-  --color-line-strong: #3a3e48;
-  --color-text: #e8e6e1;
-  --color-text-soft: #c9ccd2;
-  --color-muted: #b4b8c0;
-  --color-subtle: #9ba1ac;
-  --color-accent: #f5a524;
-  --color-code-string: #9fd7a8;
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-chip: var(--chip);
+  --color-line-soft: var(--line-soft);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-text: var(--text);
+  --color-text-soft: var(--text-soft);
+  --color-muted: var(--muted);
+  --color-subtle: var(--subtle);
+  --color-faint: var(--faint);
+  --color-strong: var(--strong);
+  --color-accent: var(--accent);
+  --color-on-accent: var(--on-accent);
+  --color-code-string: var(--code-string);
 
   --font-sans: var(--font-plex-sans);
   --font-mono: var(--font-plex-mono);

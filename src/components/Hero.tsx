@@ -25,7 +25,7 @@ export function Hero() {
         <div className="mt-9 flex flex-wrap gap-3.5">
           <a
             href="#kontakt"
-            className="inline-flex min-h-12 items-center rounded-[10px] bg-accent px-6 font-medium text-[#111214]"
+            className="inline-flex min-h-12 items-center rounded-[10px] bg-accent px-6 font-medium text-on-accent"
           >
             Projekt besprechen
           </a>
@@ -62,10 +62,10 @@ export function Hero() {
           <span className="size-3 rounded-full bg-line-strong" />
           <span className="size-3 rounded-full bg-line-strong" />
           <span className="size-3 rounded-full bg-line-strong" />
-          <span className="ml-2 font-mono text-xs text-[#8a909b]">marco.ts</span>
+          <span className="ml-2 font-mono text-xs text-faint">marco.ts</span>
         </div>
         <pre className="overflow-x-auto p-6 font-mono text-sm leading-[1.75] whitespace-pre-wrap text-text-soft">
-          <span className="text-[#8a909b]">{"// Profil"}</span>
+          <span className="text-faint">{"// Profil"}</span>
           {"\n"}
           <span className="text-accent">const</span> marco = {"{"}
           {"\n  rolle: "}<S>&quot;Senior Fullstack Dev&quot;</S>,
