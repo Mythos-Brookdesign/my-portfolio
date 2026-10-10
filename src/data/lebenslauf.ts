@@ -63,6 +63,13 @@ Senior Fullstack- und PHP-Entwickler mit rund 25 Jahren Erfahrung in der Entwick
 ## Auszubildender zum Kaufmann im Einzelhandel – BAUHAUS Magdeburg GmbH & Co KG (August 1992 bis Juli 1995)
 - Ausbildung zum Kaufmann im Einzelhandel
 
+## Wesen
+- Analytisches Denken und Problemlösungsfähigkeiten
+- Kreativität und Innovationsfreude
+- Teamfähigkeit und Kommunikationsstärke
+- Selbstständigkeit und Eigenverantwortung
+- Lernbereitschaft und kontinuierliche Weiterbildung
+
 # Bildungsweg
 - Bachelor in Kulturwissenschaften, Schwerpunkt Philosophie (Fernstudium) – FernUniversität in Hagen, seit Oktober 2025, berufsbegleitend
 - Webmaster – Fernakademie Nürnberg (Oktober 2011 bis 2012)
