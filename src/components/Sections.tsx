@@ -72,7 +72,7 @@ export function Projects() {
                   alt={`Screenshot: ${p.title}`}
                   fill
                   sizes="(max-width: 768px) 100vw, 400px"
-                  className="object-cover object-top"
+                  className="object-cover object-left-top"
                 />
               </div>
             ) : (
@@ -85,10 +85,17 @@ export function Projects() {
               <h3 className="font-display text-[22px] font-bold">{p.title}</h3>
               <p className="text-base text-muted">{p.text}</p>
               <p className="font-mono text-[13px] text-subtle">{p.stack}</p>
-              <div className="mt-auto flex gap-5 pt-2 text-[15px]">
-                <a href={p.liveUrl ?? "#"} className="hover:text-strong">Live ansehen →</a>
-                <a href={p.githubUrl ?? "#"} className="hover:text-strong">GitHub →</a>
-              </div>
+              {/* Nur vorhandene Links zeigen – keine Verweise ins Leere */}
+              {p.liveUrl || p.githubUrl ? (
+                <div className="mt-auto flex gap-5 pt-2 text-[15px]">
+                  {p.liveUrl ? (
+                    <a href={p.liveUrl} className="hover:text-strong">Live ansehen →</a>
+                  ) : null}
+                  {p.githubUrl ? (
+                    <a href={p.githubUrl} className="hover:text-strong">GitHub →</a>
+                  ) : null}
+                </div>
+              ) : null}
             </div>
           </article>
         ))}

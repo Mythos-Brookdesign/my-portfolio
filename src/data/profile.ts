@@ -36,6 +36,7 @@ export const projects: Project[] = [
     title: "Dieses Portfolio",
     text: "Next.js-Frontend mit WordPress als Headless-CMS, automatisiertes Deployment über GitHub Actions.",
     stack: "Next.js · TypeScript · WordPress · GitHub Actions",
+    githubUrl: "https://github.com/Mythos-Brookdesign/my-portfolio",
     image: "/projects/portfolio.png",
   },
   {
@@ -43,6 +44,7 @@ export const projects: Project[] = [
     title: "Frag meinen Lebenslauf",
     text: "Chat-Assistent, der Fragen zu meinem Profil beantwortet – angebunden an die Claude API.",
     stack: "Next.js · Node.js · Claude API",
+    githubUrl: "https://github.com/Mythos-Brookdesign/my-portfolio",
     image: "/projects/ask-cv.png",
   },
   {
@@ -55,10 +57,12 @@ export const projects: Project[] = [
     image: "/projects/jobpilot.jpg",
   },
   {
-    kind: "Desktop",
-    title: "[Projektname Desktop-Tool]",
-    text: "[Kurzbeschreibung des Electron-Tools und seines Nutzens.]",
-    stack: "Electron · React · Node.js",
+    kind: "Desktop · Electron",
+    title: "CatalogDesk",
+    text: "Lokales Werkzeug für Shop-Betreiber: prüft Lieferanten-CSVs auf Fehler, bereinigt Preise und Bestände und erzeugt einen WooCommerce-Import. Liest Produkte auch direkt per API, Zugangsdaten verschlüsselt im System-Schlüsselbund.",
+    stack: "Electron · React · TypeScript · SQLite · Playwright",
+    githubUrl: "https://github.com/Mythos-Brookdesign/catalogdesk",
+    image: "/projects/catalogdesk.jpg",
   },
 ];
 
