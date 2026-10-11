@@ -46,10 +46,13 @@ export const projects: Project[] = [
     image: "/projects/ask-cv.png",
   },
   {
-    kind: "Mobile App",
-    title: "[Projektname App]",
-    text: "[Kurzbeschreibung: welches Problem die App löst und für wen.]",
-    stack: "React Native · TypeScript",
+    kind: "App · iOS, Android, Web",
+    title: "jobpilot",
+    text: "Bewerbungs-Tracker mit Pipeline, Terminen und Erinnerungen. Ein KI-Assistent wertet Stellenanzeigen aus, prüft die Passung zum Profil und entwirft Anschreiben. Daten lokal in SQLite, über 120 Tests.",
+    stack: "Expo · React Native · TypeScript · SQLite · Claude API",
+    liveUrl: "https://jobpilot-demo.expo.app",
+    githubUrl: "https://github.com/Mythos-Brookdesign/jobpilot",
+    image: "/projects/jobpilot.jpg",
   },
   {
     kind: "Desktop",
