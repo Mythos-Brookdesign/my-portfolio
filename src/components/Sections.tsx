@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { jobs, posts, profile, projects, stack } from "@/data/profile";
+import { earlierJobs, education, jobs, posts, profile, projects, stack } from "@/data/profile";
 import { SectionHeading } from "./SectionHeading";
 
 const container = "mx-auto max-w-[1200px] px-6 pb-24";
@@ -120,10 +120,42 @@ export function Experience() {
           </li>
         ))}
       </ol>
-      <a href={profile.cvUrl} className="mt-7 inline-block text-base hover:text-strong">
-        Vollständiger Lebenslauf als PDF →
-      </a>
+      <div className="mt-14 grid grid-cols-[repeat(auto-fit,minmax(320px,1fr))] gap-6">
+        <TimelineCard
+          title="Davor: Handel und Vertrieb"
+          items={earlierJobs.map((j) => ({ time: j.time, title: j.role, place: j.company }))}
+        />
+        <TimelineCard title="Aus- und Weiterbildung" items={education} />
+      </div>
+      {profile.cvUrl ? (
+        <a href={profile.cvUrl} className="mt-7 inline-block text-base hover:text-strong">
+          Vollständiger Lebenslauf als PDF →
+        </a>
+      ) : null}
     </section>
+  );
+}
+
+function TimelineCard({
+  title,
+  items,
+}: {
+  title: string;
+  items: { time: string; title: string; place?: string }[];
+}) {
+  return (
+    <div className={`${card} p-7`}>
+      <h3 className="mb-5 font-display text-xl font-bold">{title}</h3>
+      <ul className="flex flex-col gap-4">
+        {items.map((i) => (
+          <li key={i.title} className="flex flex-col gap-0.5">
+            <span className="font-mono text-[13px] text-subtle">{i.time}</span>
+            <span className="text-base font-medium">{i.title}</span>
+            {i.place ? <span className="text-[15px] text-muted">{i.place}</span> : null}
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 }
 

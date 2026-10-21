@@ -3,18 +3,18 @@
 // keine Privatadresse, Telefonnummer, Geburtsdatum oder Gehaltsangaben eintragen.
 export const lebenslauf = `
 # Zusammenfassung
-Senior Fullstack- und PHP-Entwickler mit rund 25 Jahren Erfahrung in der Entwicklung professioneller Webanwendungen, E-Commerce-Systeme und individueller CMS-Lösungen. Schwerpunkte sind PHP/Symfony, React/Next.js, TypeScript, Node.js, WordPress/Headless-CMS, REST-APIs sowie Spryker, OXID und WooCommerce. Erfahren in technischer Konzeption, Kundenberatung, Code-Reviews, Git-basierten Workflows und automatisierten CI/CD-Deployments. Ergänzend bringe ich Projektverantwortung, Führungserfahrung und die Ausbildereignung nach AEVO mit. Verfügbar für hybride Positionen im Raum Ingolstadt/München/Pfaffenhofen sowie für bundesweite Remote-Tätigkeiten.
+Fullstack-Entwickler mit über 20 Jahren Erfahrung in der Webentwicklung. Schwerpunkt heute sind moderne Webanwendungen mit React, Next.js, TypeScript und Node.js, kombiniert mit fundierter PHP-Backend-Erfahrung, Headless-Architekturen auf WordPress-Basis und E-Commerce mit Spryker, OXID und WooCommerce. Ergänzend App-Entwicklung mit React Native und Desktop-Anwendungen mit Electron. Sicher in Git-Workflows, Code-Reviews und CI/CD über GitHub Actions; KI-Werkzeuge wie GitHub Copilot und Claude setze ich gezielt im Entwicklungsalltag ein. Dazu kommen Erfahrung in Projektverantwortung und Mitarbeiterführung sowie die Ausbildereignung nach AEVO. Verfügbar für hybride Positionen im Raum Ingolstadt/München/Pfaffenhofen sowie für bundesweite Remote-Tätigkeiten.
 
 # Berufserfahrung
 
-## Senior Fullstack Entwickler – Region10Group GmbH, Ingolstadt (Mai 2023 bis heute)
+## Senior Fullstack-Entwickler – Region10Group GmbH, Ingolstadt (Mai 2023 bis Oktober 2026)
 - Planung und Realisierung von Webprojekten als Fullstack-Entwickler – von der Konzeption bis zum Go-live
 - Entwicklung moderner Frontends mit React, Next.js und TypeScript
 - Entwicklung plattformübergreifender Desktop-Anwendungen mit Electron
 - KI-gestützte Softwareentwicklung mit GitHub Copilot und Claude, u. a. für Code-Generierung, Refactoring, Tests und Dokumentation
 - Backend-Entwicklung mit Node.js und PHP sowie Datenhaltung in MongoDB
 - Aufbau von Headless-Architekturen mit WordPress als Middleware und Content-Quelle via REST-API
-- Integration von Drittsystemen über APIs, u. a. HubSpot (CRM/Marketing) und Docuware (Dokumentenmanagement)
+- Integration von Drittsystemen über APIs, u. a. HubSpot (CRM/Marketing) und DocuWare (Dokumentenmanagement)
 - Versionierung, Code Reviews und Zusammenarbeit über Git und GitHub
 - Automatisierte Deployments und CI/CD-Pipelines mit GitHub Actions, inkl. Build und Veröffentlichung eigener npm-Packages für JavaScript-/TypeScript-Projekte
 
@@ -26,7 +26,7 @@ Senior Fullstack- und PHP-Entwickler mit rund 25 Jahren Erfahrung in der Entwick
 - Arbeit in großen, agilen Entwicklungsteams mit Git-basiertem Workflow (Branching, Pull Requests)
 - Abstimmung mit Frontend, Projektmanagement und QA in komplexen Enterprise-Projekten
 
-## Senior Webentwickler – INCREON GmbH, Ismaning (November 2014 bis März 2022)
+## Web Developer, Digital Lab – INCREON GmbH, Ismaning, Naming- und Branding-Agentur für B2B-Kommunikation (November 2014 bis Februar 2022)
 - Planung und technische Konzeption von Webprojekten, inkl. Aufwandsschätzung und Abstimmung mit Kunden und Projektleitung
 - Entwicklung individueller Webapplikationen mit PHP, MySQL und jQuery
 - Konzeption und Entwicklung maßgeschneiderter WordPress-Plugins (PHP, MySQL, HTML5, CSS3, jQuery)
@@ -52,7 +52,7 @@ Senior Fullstack- und PHP-Entwickler mit rund 25 Jahren Erfahrung in der Entwick
 ## Callcenter-Agent (Outbound) – FREENET Customer Care GmbH (August 2005 bis Mai 2007)
 - Beratung und Verkauf von Telekommunikationsprodukten am Telefon
 
-## Beratung, Erstellung und Verkauf von Internetdienstleistungen – ComModus GbR (Mai 2001 bis Juli 2005)
+## Webentwickler und Berater für Internetdienstleistungen – ComModus GbR (Mai 2001 bis Juli 2005)
 - Konzeption, Erstellung, Design, Erweiterung und Pflege von Internetauftritten mit PHP, MySQL, HTML und JavaScript
 - Beratung und Verkauf von Internetdienstleistungen
 
@@ -80,7 +80,7 @@ Senior Fullstack- und PHP-Entwickler mit rund 25 Jahren Erfahrung in der Entwick
 
 # Zertifikate und Zulassungen
 - Ausbilderschein (AEVO), ausgestellt im Oktober 2024, läuft nicht ab
-- Zertifizierter OXID-Entwickler
+- Zertifizierter OXID-Entwickler (2013)
 
 # Fähigkeiten
 GitHub Actions, Node.js, GitHub Copilot, TypeScript, WooCommerce, KI-gestützte Entwicklung, JavaScript, Spryker, WordPress, Symfony, MongoDB, MySQL, React, Next.js, Vue.js, React Native, PHP, APIs, CI/CD, Git, PHPUnit, Electron, Flutter, OXID eShop, CMS, Angular
@@ -91,7 +91,7 @@ GitHub Actions, Node.js, GitHub Copilot, TypeScript, WooCommerce, KI-gestützte 
 - Backend: PHP, Node.js, REST-APIs
 - Datenbanken: MySQL, MongoDB
 - CMS & E-Commerce: WordPress (Plugin- & Theme-Entwicklung, Headless), WooCommerce, OXID eShop, Shopware, Joomla
-- Integrationen: HubSpot, Docuware, CMS-Anbindungen via REST-API
+- Integrationen: HubSpot, DocuWare, CMS-Anbindungen via REST-API
 - DevOps & Workflow: Git & GitHub (Branching, Pull Requests, Code Reviews), CI/CD mit GitHub Actions, automatisierte Deployments, Unit Testing
 - Desktop: plattformübergreifende Anwendungen mit Electron
 - KI-Tools: GitHub Copilot, Claude

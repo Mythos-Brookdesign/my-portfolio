@@ -8,16 +8,16 @@ export const profile = {
   email: "marco.hinkelmann@brookdesign.de",
   linkedin: "#", // TODO: LinkedIn-URL eintragen
   github: "#", // TODO: GitHub-URL eintragen
-  cvUrl: "#", // TODO: PDF in /public ablegen, z. B. "/lebenslauf.pdf"
+  cvUrl: "", // PDF in /public ablegen, z. B. "/lebenslauf.pdf" – leer blendet die Links aus
 };
 
 export const stack = [
   { title: "Frontend", items: ["React", "Next.js", "TypeScript", "JavaScript", "HTML5", "CSS3"] },
   { title: "Backend & Daten", items: ["Node.js", "PHP", "REST-APIs", "MySQL", "MongoDB"] },
   { title: "Apps & Desktop", items: ["React Native", "Electron"] },
-  { title: "CMS & E-Commerce", items: ["WordPress", "Headless CMS", "WooCommerce", "Spryker", "OXID eShop", "Shopware"] },
-  { title: "DevOps & Qualität", items: ["Git", "GitHub Actions", "CI/CD", "PHPUnit", "npm-Packages"] },
-  { title: "KI & Integrationen", items: ["GitHub Copilot", "Claude", "HubSpot", "Docuware"] },
+  { title: "CMS & E-Commerce", items: ["WordPress", "Headless CMS", "WooCommerce", "Spryker", "OXID eShop", "Shopware", "Joomla"] },
+  { title: "DevOps & Qualität", items: ["Git", "GitHub Actions", "CI/CD", "PHPUnit", "Code-Reviews", "npm-Pakete"] },
+  { title: "KI & Integrationen", items: ["GitHub Copilot", "Claude", "HubSpot", "DocuWare"] },
 ];
 
 export type Project = {
@@ -61,36 +61,58 @@ export const projects: Project[] = [
     title: "CatalogDesk",
     text: "Lokales Werkzeug für Shop-Betreiber: prüft Lieferanten-CSVs auf Fehler, bereinigt Preise und Bestände und erzeugt einen WooCommerce-Import. Liest Produkte auch direkt per API, Zugangsdaten verschlüsselt im System-Schlüsselbund.",
     stack: "Electron · React · TypeScript · SQLite · Playwright",
-    githubUrl: "https://github.com/Mythos-Brookdesign/catalogdesk",
+    // Kommerzielles Produkt, Quellcode privat – hier später die Produktseite als liveUrl eintragen
     image: "/projects/catalogdesk.jpg",
   },
 ];
 
 export const jobs = [
   {
-    time: "05/2023 – heute",
+    time: "05/2023 – 10/2026",
     role: "Senior Fullstack-Entwickler",
     company: "Region10Group GmbH · Ingolstadt",
-    text: "Web-, App- und Desktop-Projekte mit React, Next.js, Node.js und TypeScript, Headless-WordPress, HubSpot- und Docuware-Integrationen, CI/CD mit GitHub Actions.",
+    text: "Webanwendungen mit React, Next.js und TypeScript, Backend mit PHP, Node.js und MongoDB, Headless-WordPress, Integrationen von HubSpot und DocuWare, Desktop-Anwendungen mit Electron, CI/CD mit GitHub Actions und eigene npm-Pakete.",
   },
   {
     time: "03/2022 – 05/2023",
     role: "Senior PHP Backend Developer",
     company: "diva-e Digital Value Excellence GmbH · München",
-    text: "Backend-Entwicklung für große E-Commerce-Plattformen auf Basis von Spryker, OOP mit Design Patterns, Unit Testing in großen agilen Teams.",
+    text: "Backend-Entwicklung für komplexe E-Commerce-Projekte auf Basis von Spryker Commerce OS, objektorientiertes PHP nach Clean-Code-Prinzipien, neue Module, PHPUnit-Tests und Code-Reviews in agilen Teams.",
   },
   {
-    time: "11/2014 – 03/2022",
-    role: "Senior Webentwickler",
+    time: "11/2014 – 02/2022",
+    role: "Web Developer, Digital Lab",
     company: "INCREON GmbH · Ismaning",
-    text: "Planung und Umsetzung von Webprojekten, WordPress-Plugins und -Themes, WooCommerce-Shops und Headless-CMS-Lösungen.",
+    text: "B2B-Internetauftritte von der Konzeption bis zum Betrieb, individuelle WordPress-Plugins und -Themes, WooCommerce-Shops, REST-APIs und WordPress als Headless-CMS, Optimierung für SEO und Performance.",
   },
   {
     time: "12/2012 – 10/2014",
     role: "Webentwickler (OXID eShop)",
     company: "Biering Online GmbH",
-    text: "Entwicklung und Erweiterung von OXID eShops und individuellen Modulen.",
+    text: "Entwicklung, Erweiterung und Anpassung von OXID eShops, individuelle OXID-Module, Websites mit Joomla.",
   },
+  {
+    time: "05/2001 – 07/2005",
+    role: "Webentwickler und Berater für Internetdienstleistungen",
+    company: "ComModus GbR",
+    text: "Konzeption, Gestaltung und Pflege von Internetauftritten mit PHP, MySQL, HTML und JavaScript, Beratung und Verkauf.",
+  },
+];
+
+// Stationen außerhalb der Webentwicklung – auf der Seite kompakt dargestellt
+export const earlierJobs = [
+  { time: "05/2007 – 10/2011", role: "Abteilungsverantwortlicher Kaufmann im Einzelhandel", company: "Medimax Kiel GmbH · Führung von 3 Mitarbeitern" },
+  { time: "08/2005 – 05/2007", role: "Callcenter-Agent (Outbound)", company: "FREENET Customer Care GmbH" },
+  { time: "03/2000 – 04/2001", role: "Callcenter-Agent & Coach", company: "Walter Telemedien & Vertrieb GmbH" },
+];
+
+export const education = [
+  { time: "seit 10/2025", title: "Bachelor Kulturwissenschaften, Schwerpunkt Philosophie", place: "FernUniversität in Hagen · berufsbegleitend" },
+  { time: "10/2024", title: "Ausbildereignung nach AEVO" },
+  { time: "2013", title: "Zertifizierter OXID-Entwickler" },
+  { time: "10/2011 – 2012", title: "Weiterbildung zum Webmaster", place: "Webmaster Fernakademie Nürnberg" },
+  { time: "1995 – 1996", title: "Fachhochschulreife", place: "Fachoberschule Wirtschaft, Magdeburg" },
+  { time: "08/1992 – 07/1995", title: "Ausbildung zum Kaufmann im Einzelhandel", place: "BAUHAUS Magdeburg" },
 ];
 
 export const posts = [

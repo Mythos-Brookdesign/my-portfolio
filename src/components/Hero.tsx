@@ -18,8 +18,7 @@ export function Hero() {
           Ich baue Web-, App- und Desktop-Lösungen – von der API bis zum Pixel.
         </h1>
         <p className="mt-7 max-w-[620px] text-[19px] text-muted">
-          Über 14 Jahre professionelle Webentwicklung mit React, Next.js, Node.js, TypeScript und
-          PHP. Headless-Architekturen, E-Commerce und KI-gestützte Entwicklung – mit dem Blick für
+          Über 20 Jahre Webentwicklung mit React, Next.js, Node.js, TypeScript und PHP. Headless-Architekturen, E-Commerce und KI-gestützte Entwicklung – mit dem Blick für
           saubere Prozesse von Git bis CI/CD.
         </p>
         <div className="mt-9 flex flex-wrap gap-3.5">
@@ -29,21 +28,23 @@ export function Hero() {
           >
             Projekt besprechen
           </a>
-          <a
-            href={profile.cvUrl}
-            className="inline-flex min-h-12 items-center gap-2.5 rounded-[10px] border border-line-strong px-6"
-          >
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-              <path d="M12 3v12" />
-              <path d="m7 10 5 5 5-5" />
-              <path d="M5 21h14" />
-            </svg>
-            Lebenslauf (PDF)
-          </a>
+          {profile.cvUrl ? (
+            <a
+              href={profile.cvUrl}
+              className="inline-flex min-h-12 items-center gap-2.5 rounded-[10px] border border-line-strong px-6"
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <path d="M12 3v12" />
+                <path d="m7 10 5 5 5-5" />
+                <path d="M5 21h14" />
+              </svg>
+              Lebenslauf (PDF)
+            </a>
+          ) : null}
         </div>
         <dl className="mt-14 flex flex-wrap gap-10">
           {[
-            { v: "14+", l: "Jahre Webentwicklung" },
+            { v: "20+", l: "Jahre Webentwicklung" },
             { v: "2001", l: "erste Webprojekte" },
             { v: "sofort", l: "verfügbar", accent: true },
           ].map((s) => (
